@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Mali');
+
+:root {
+    --mainDark: #1b1313;
+    --mainGreen: #6a8a4b;
+    --mainWhite: #fff;
+    --mainGrey: #bdbdbd;
+    --mainCycan: #4dd0e1;
+}
+
+body {
+    font-family: 'Mali', cursive;
+    background-color: var(--mainWhite);
+    color: var(--mainDark);
+}
+
+/*Globle*/
+.text-green {
+    color: var(--mainGreen);
+}
+
+.text-slant {
+    font-family: "Caveat", cursive;
+}
+
+.green_btn {
+    color: var(--mainGreen);
+    border: .1rem solid var(--mainGreen);
+}
+
+.green_btn:hover {
+    background: var(--mainGreen);
+    color: var(--mainWhite);
+    border-color: var(--mainWhite);
+}
+
+/* End of Globle */
+/*navbar*/
+.navbar {
+    background: var(--mainDark);
+}
+
+.phone-icon {
+    color: var(--mainGreen);
+    border: 0.1rem solid var(--mainGreen);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.phone-icon:hover{
+    color: var(--mainWhite);
+    background: var(--mainGreen);
+    border-color: var(--mainWhite);
+}
+
+/* banner section */
+.banner-info {
+    min-height: calc(100vh - 90px);
+    background: var(--mainGrey);
+    position: relative;
+}
+
+.banner-info_footer {
+    background: var(--mainGreen);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.banner-img {
+    min-height: calc(100vh - 90px);
+    background: url(../img/banner-img.jpg)center/cover fixed no-repeat;
+    /* background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    position: relative;
+}
+
+.banner-img_footer {
+    background: var(--mainDark);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 104px;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer_contact {
+    margin: 0 auto;
+    margin-left: 3rem;
+}
+/* end of banner section */
+/* about */
+.title-underline {
+    width: 20rem;
+    height: 0.4rem;
+    background: grey;
+    border-radius: 2rem;
+    margin-left: 5rem;
+    position: relative;
+}
+.title-underline-center {
+    position: absolute;
+    height: 0.6rem;
+    background: green;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+}
+.blockquote {
+    border-left: 0.5rem solid green;
+}
+/* about img */
+.img-container {
+    position: relative;
+}
+.featured-icon{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+.featured-icon-left{
+    color: #f1f1f1;
+    background: #1b1313;
+    padding: 0.5rem;
+    display: inline-block;
+}
+.featured-icon-right{
+    color: #f1f1f1;
+    background: green;
+    padding: 0.5rem;
+    display: inline-block;
+}
+/* featured */
+.featured{
+    background: rgb(230, 223, 223);
+}
+.section-title-underline{
+    width: 20rem;
+    background: grey;
+    height: 0.4rem;
+    margin-left: 24rem;
+    border-radius: 0.1rem;
+    position: relative;
+}
+.section-title-underline-center{
+    position: absolute;
+    height: 0.6rem;
+    background: green;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.3rem;  
+}
+/* contact */
+.contact {
+    background: var(--mainGreen);
+    color: var(--mainWhite);
+}
+.contact-btn{
+    color: var(--mainWhite);
+    border: 0.1rem solid var(--mainWhite);
+}
+.contact-btn:hover {
+    color: var(--mainGreen);
+    background: var(--mainWhite);
+}
+/* services */
+.services-title-underline{
+    width: 20rem;
+    background: grey;
+    height: 0.4rem;
+    margin-left: 12.5rem;
+    border-radius: 0.1rem;
+    position: relative;
+}
+.services-title-underline-center{
+    position: absolute;
+    height: 0.6rem;
+    background: green;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.3rem;  
+}
+.services, .tour{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(../img/banner-img.jpg)center/cover fixed no-repeat;
+}
+.services-info-text{
+    color: var(--mainWhite) !important;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--mainGreen);
+    margin-bottom: 0;
+    text-decoration: none !important;
+}
+.services-info-text:hover {
+    color: var(--mainDark) !important;
+}
+.service-icon{
+    color: var(--mainGreen);
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: 0.1rem solid var(--mainGreen);
+    margin-right: 1rem;
+    transition: all 1s ease-in-out;
+}
+.service-icon:hover{
+    background: var(--mainGreen);
+    color: var(--mainGrey);
+}
+.service-link:hover{
+    color: var(--mainWhite);
+    text-decoration: none;
+}
+/* gallery */
+.gallery-btn:hover{
+    background: var(--mainGreen);
+    color: var(--mainWhite);
+}
+.gallery-img-container{
+    position: relative;
+    transition: all 1s linear;
+    overflow: hidden;
+}
+.gallery-img-container:hover{
+    background: rgba(0,0,0,0.6);
+}
+.gallery-img{
+    transition: all 1s linear;
+}
+.gallery-img-container:hover .gallery-img{
+    opacity: 0.3;
+}
+.gallery-info{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    background: var(--mainGreen);
+    color: var(--mainWhite);
+    transition: all 0.3s linear;
+}
+.gallery-info:hover{
+    color: var(--mainDark);
+    text-decoration: none;
+}
+.gallery-img-container:hover .gallery-info{
+    transform: translate(-50%, 0);
+}
+.gallery-icon{
+    position: absolute;
+    color: var(--mainWhite);
+    left: 50%;
+    top: 50%;
+    font-size: 2rem;
+    transition: all 0.3s linear;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    cursor: pointer;
+}
+.gallery-img-container:hover .gallery-icon {
+    opacity: 1;
+}
+/* tour */
+.tour-icon{
+    color: var(--mainGreen);
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 2rem;
+    background: var(--mainWhite);
+    border-radius: 30%;
+    margin-top: 0.5rem; 
+    cursor: pointer;
+    transition: all 1s linear;
+}
+.tour-icon:hover{
+    color: var(--mainWhite);
+    background: var(--mainGreen);
+}
+/* footer */
+.footer{
+    background: var(--mainDark);
+}
+.footer-title-underline {
+    width: 13rem;
+    height: 0.4rem;
+    background: grey;
+    border-radius: 2rem;
+    margin-left: 7.5rem;
+    position: relative;
+}
+.footer-title-underline-center {
+    position: absolute;
+    height: 0.6rem;
+    background: green;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+}
