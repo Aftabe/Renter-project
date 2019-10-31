@@ -310,3 +310,11 @@ body {
     transform: translate(-50%, -50%);
     border-radius: 1rem;
 }
+
+.footer-icon {
+    font-size: 25px;
+    transition: all .3s ease-in-out;
+}
+.footer-icon:hover {
+    color: white;
+}
